@@ -1,12 +1,12 @@
-// My junk jenkinsfile.
+// My junk jenkinsfile on dev branch.
 
 node {
     stage "Create build output"
     
-    // Make the output directory.
+    // Make the dev output directory.
     sh "mkdir -p output"
 
-    // Write an useful file, which is needed to be archived.
+    // Write an useful sample file, which is needed to be archived.
     writeFile file: "output/usefulfile.txt", text: "This file is useful, need to archive it."
 
     // Write an useless file, which is not needed to be archived.
